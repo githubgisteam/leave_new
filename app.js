@@ -137,7 +137,6 @@ app.get('/getdata', (req, res) => {
     });
 });
 
-
 /**Rest Api for to get,post,update service now and leavemanagement system */
 app.post('/leavesystem', (req, response) => {
     console.log('displayname.... ', req.body.queryResult.intent.displayName);

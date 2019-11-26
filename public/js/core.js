@@ -2,7 +2,7 @@ $(document).ready(function () {
 	//  Login employee on click Sign In Button checks that username =='admin' and password == 'admin'
 	$("#login").click(function () {
 		alert("here")
-		$.get("http://localhost:3000/getdata", function(data){
+		$.get(" https://lit-meadow-07969.herokuapp.com/getdata", function(data){
 			var getpassword = data[0].loginpassword;		
 			if ($("#loginusername").val() == 'admin' && $("#loginpassword").val() == "admin") {
 				
@@ -33,7 +33,7 @@ $(document).ready(function () {
 	//to get employee list from data base for manager access
 
 	$.ajax({
-		url: "https://thawing-harbor-99356.herokuapp.com/getemployees"
+		url: " https://lit-meadow-07969.herokuapp.com/getemployees"
 	}).then(function (data) {
 		$('#loadingmessage').show();
 		$.each(data, function (i, l) { 
