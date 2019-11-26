@@ -134,7 +134,7 @@ app.get('/getdata', (req, res) => {
         } else {
             res.json(result);
         }
-    });
+    });   
 });
 
 /**Rest Api for to get,post,update service now and leavemanagement system */

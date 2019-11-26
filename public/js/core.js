@@ -1,12 +1,10 @@
 $(document).ready(function () {
 	//  Login employee on click Sign In Button checks that username =='admin' and password == 'admin'
 	$("#login").click(function () {
-		alert("here")
 		$.get(" https://lit-meadow-07969.herokuapp.com/getdata", function(data){
 			var getpassword = data[0].loginpassword;		
 			if ($("#loginusername").val() == 'admin' && $("#loginpassword").val() == "admin") {
-				
-				alert("hii1")
+			
 			window.location.href = 'tables.html';
 			} else {
 				alert("Please enter valid username and password");
